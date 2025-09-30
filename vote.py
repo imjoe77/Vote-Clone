@@ -1,10 +1,7 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+age = int(input("Enter your age: "))
 
-print(f"\nBefore swapping: a = {a}, b = {b}")
-
-temp = a
-a = b
-b = temp
-
-print(f"After swapping: a = {a}, b = {b}")
+if age >= 18:
+    print("✅ You are eligible to vote!")
+else:
+    print(" You are not eligible to vote yet.")
+    print(f"You need to wait {18 - age} more year(s).")
